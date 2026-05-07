@@ -26,6 +26,35 @@
 
 
 </head>
+<style>
+  .header-area-6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  body {
+    padding-top: 110px;
+  }
+
+  .header__logo a,
+  .offset-logo a {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  #home,
+  #about,
+  #services,
+  #portfolio,
+  #team,
+  #blog,
+  #contact {
+    scroll-margin-top: 130px;
+  }
+</style>
 
 
 <body class="body-wrapper dark">
@@ -56,7 +85,7 @@
       <div class="side-info-content">
         <div class="offset-widget offset-header">
           <div class="offset-logo">
-            <a href="index.html">RiverX</a>
+            <a href="#home">RiverX</a>
           </div>
           <button id="side-info-close" class="side-info-close">
             <i class="fas fa-times"></i>
@@ -64,7 +93,7 @@
         </div>
         <div class="mobile-menu d-xl-none fix"></div>
         <div class="offset-button">
-          <a href="contact.html" class="rr-btn">
+          <a href="#contact" class="rr-btn">
             <span class="btn-wrap">
               <span class="text-one">Let's Talk</span>
               <span class="text-two">Let's Talk</span>
@@ -107,7 +136,7 @@
       <div class="container rr-container-1850">
         <div class="header-area-6__inner">
           <div class="header__logo">
-            <a href="index.html">RiverX</a>
+            <a href="#home">RiverX</a>
           </div>
           <div class="header__navicon d-xl-none">
             <button class="side-toggle">
@@ -131,7 +160,7 @@
       <main>
 
         <!-- hero area start  -->
-        <section class="hero-area-6">
+        <section class="hero-area-6" id="home">
           <div class="container rr-container-1850">
             <div class="hero-area-6-inner">
               <div class="hero-6-section-content">
@@ -154,71 +183,13 @@
             <div class="hero-6-nav d-none d-xl-block fade-anim">
               <nav class="main-menu">
                 <ul>
-                  <li class="menu-item-has-children">
-                    <a href="#">Home</a>
-                    <ul class="dp-menu column-2">
-                      <li><a href="digital-agency.html">Digital Agency</a></li>
-                      <li><a href="creative-agency.html">Creative Agency</a></li>
-                      <li><a href="marketing-agency.html">Marketing Agency</a></li>
-                      <li><a href="design-agency.html">Design Agency</a></li>
-                      <li><a href="web-development.html">Web Development</a></li>
-                      <li><a href="branding-agency.html">Branding Agency</a></li>
-                      <li><a href="startup-agency.html">Startup Agency</a></li>
-                      <li><a href="web-design.html">Web Design</a></li>
-                      <li><a href="modern-agency.html">Modern Agency</a></li>
-                      <li><a href="modern-agency-2.html">Modern Agency 2</a></li>
-                      <li><a href="modern-agency-3.html">Modern Agency 3</a></li>
-                      <li><a href="agency-portfolio.html">Agency Portfolio</a></li>
-                      <li><a href="agency-portfolio-2.html">Agency Portfolio 2</a></li>
-                      <li><a href="agency-portfolio-3.html">Agency Portfolio 3</a></li>
-                      <li><a href="it-solution.html">IT Solution</a></li>
-                      <li><a href="portfolio-horizontal.html">Portfolio Horizontal</a></li>
-                      <li><a href="portfolio-line-effect.html">Portfolio Line Effect</a></li>
-                      <li><a href="portfolio-box-effect.html">Portfolio Box Effect</a></li>
-                      <li><a href="portfolio-vertical.html">Portfolio Vertical</a></li>
-                      <li><a href="portfolio-slicer.html">Portfolio Slicer</a></li>
-                      <li><a href="parallax-carousal.html">Parallax Carousal</a></li>
-                      <li><a href="portfolio-showcase.html">Portfolio Showcase</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Service</a>
-                    <ul class="dp-menu">
-                      <li><a href="service.html">Core Services</a></li>
-                      <li><a href="service-2.html">Services ST. Pulse</a></li>
-                      <li><a href="service-3.html">Services ST. Morph</a></li>
-                      <li><a href="service-4.html">Services ST. Nova</a></li>
-
-                      <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="dp-menu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="dp-menu">
-                      <li><a href="work.html">Core Portfolio</a></li>
-                      <li><a href="work-2.html">Portfolio ST. Classic</a></li>
-                      <li><a href="work-3.html">Portfolio ST. Minimal</a></li>
-                      <li><a href="work-4.html">Portfolio ST. Modern</a></li>
-                      <li><a href="work-5.html">Portfolio ST. Interactive</a></li>
-                      <li><a href="work-6.html">Portfolio ST. Metro</a></li>
-                      <li><a href="work-7.html">Portfolio ST. Gridline</a></li>
-                      <li><a href="work-8.html">Portfolio ST. Neon</a></li>
-                      <li><a href="work-details.html">Portfolio Details</a></li>
-                      <li><a href="team.html">Team</a></li>
-                      <li><a href="team-details.html">Team Details</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="404.html">Error Page</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -230,7 +201,7 @@
         <!-- hero area end  -->
 
         <!-- about area start  -->
-        <section class="about-area-6">
+        <section class="about-area-6" id="about">
           <div class="container rr-container-1850">
             <div class="about-area-6-inner">
               <div class="about-6-section-header">
@@ -268,7 +239,7 @@
 
 
         <!-- service area start  -->
-        <section class="service-area-6">
+        <section class="service-area-6" id="services">
           <div class="container rr-container-1850">
             <div class="service-area-6-inner section-spacing">
               <div class="service-6-section-header fade-anim">
@@ -278,7 +249,7 @@
                   </div>
                 </div>
                 <div class="btn-wrapper">
-                  <a href="service.html" class="rr-btn-underline"><span>( + )</span>explore all<i
+                  <a href="#services" class="rr-btn-underline"><span>( + )</span>explore all<i
                       class="fa-sharp fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
@@ -289,7 +260,7 @@
                 </div>
                 <div class="services-6-wrapper">
                   <div class="service-box-6">
-                    <h3 class="title"><a href="service-details.html">Design</a></h3>
+                    <h3 class="title"><a href="#services">Design</a></h3>
                     <div class="content">
                       <ul class="service-list">
                         <li>Design systems</li>
@@ -302,13 +273,13 @@
                         <li>Graphics</li>
                       </ul>
                       <div class="thumb">
-                        <a href="service-details.html"><img src="assets/ad-imgs/service/service-s-5.webp"
+                        <a href="#services"><img src="assets/ad-imgs/service/service-s-5.webp"
                             alt="image"></a>
                       </div>
                     </div>
                   </div>
                   <div class="service-box-6">
-                    <h3 class="title"><a href="service-details.html">Branding</a></h3>
+                    <h3 class="title"><a href="#services">Branding</a></h3>
                     <div class="content">
                       <ul class="service-list">
                         <li>Naming</li>
@@ -323,13 +294,13 @@
                         <li>Editorial design</li>
                       </ul>
                       <div class="thumb">
-                        <a href="service-details.html"><img src="assets/ad-imgs/service/service-s-6.webp"
+                        <a href="#services"><img src="assets/ad-imgs/service/service-s-6.webp"
                             alt="image"></a>
                       </div>
                     </div>
                   </div>
                   <div class="service-box-6">
-                    <h3 class="title"><a href="service-details.html">Development</a></h3>
+                    <h3 class="title"><a href="#services">Development</a></h3>
                     <div class="content">
                       <ul class="service-list">
                         <li>Web Development</li>
@@ -342,13 +313,13 @@
                         <li>Web Design</li>
                       </ul>
                       <div class="thumb">
-                        <a href="service-details.html"><img src="assets/ad-imgs/service/service-s-7.webp"
+                        <a href="#services"><img src="assets/ad-imgs/service/service-s-7.webp"
                             alt="image"></a>
                       </div>
                     </div>
                   </div>
                   <div class="service-box-6">
-                    <h3 class="title"><a href="service-details.html">Marketing</a></h3>
+                    <h3 class="title"><a href="#services">Marketing</a></h3>
                     <div class="content">
                       <ul class="service-list">
                         <li>Marketing & automation</li>
@@ -362,7 +333,7 @@
                         <li>Organizational Therapy</li>
                       </ul>
                       <div class="thumb">
-                        <a href="service-details.html"><img src="assets/ad-imgs/service/service-s-8.webp"
+                        <a href="#services"><img src="assets/ad-imgs/service/service-s-8.webp"
                             alt="image"></a>
                       </div>
                     </div>
@@ -375,7 +346,7 @@
         <!-- service area end  -->
 
         <!-- portfolio area start  -->
-        <section class="portfolio-area-6 rr-bg-primary">
+        <section class="portfolio-area-6 rr-bg-primary" id="portfolio">
           <div class="container rr-container-1850">
             <div class="portfolio-area-6-inner section-spacing-top">
               <div class="portfolio-6-section-header fade-anim">
@@ -385,7 +356,7 @@
                   </div>
                 </div>
                 <div class="btn-wrapper">
-                  <a href="work.html" class="rr-btn-underline"><span>( 110+ )</span>explore all<i
+                  <a href="#portfolio" class="rr-btn-underline"><span>( 110+ )</span>explore all<i
                       class="fa-sharp fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
@@ -393,7 +364,7 @@
                 <div class="portfolio-6-wrapper">
                   <div class="portfolio-6-item span-2" data-img="assets/ad-imgs/project/project-s-21.webp"
                     data-title="Arrox Agency" data-subtitle="(2024)">
-                    <a href="work-details.html"> <img src="assets/ad-imgs/project/project-s-16.webp" alt=""></a>
+                    <a href="#portfolio"> <img src="assets/ad-imgs/project/project-s-16.webp" alt=""></a>
                     <div class="hover-image">
                       <img class="hover-img" src="assets/ad-imgs/project/project-s-21.webp" alt="Hover Preview">
                       <div class="hover-text">
@@ -404,7 +375,7 @@
                   </div>
                   <div class="portfolio-6-item" data-img="assets/ad-imgs/project/project-s-22.webp"
                     data-title="Arrox Agency" data-subtitle="(2024)">
-                    <a href="work-details.html"><img src="assets/ad-imgs/project/project-s-17.webp" alt=""></a>
+                    <a href="#portfolio"><img src="assets/ad-imgs/project/project-s-17.webp" alt=""></a>
                     <div class="hover-image">
                       <img class="hover-img" src="assets/ad-imgs/project/project-s-21.webp" alt="Hover Preview">
                       <div class="hover-text">
@@ -415,7 +386,7 @@
                   </div>
                   <div class="portfolio-6-item" data-img="assets/ad-imgs/project/project-s-23.webp"
                     data-title="Arrox Agency" data-subtitle="(2024)">
-                    <a href="work-details.html"><img src="assets/ad-imgs/project/project-s-18.webp" alt=""></a>
+                    <a href="#portfolio"><img src="assets/ad-imgs/project/project-s-18.webp" alt=""></a>
                     <div class="hover-image">
                       <img class="hover-img" src="assets/ad-imgs/project/project-s-21.webp" alt="Hover Preview">
                       <div class="hover-text">
@@ -426,7 +397,7 @@
                   </div>
                   <div class="portfolio-6-item" data-img="assets/ad-imgs/project/project-s-24.webp"
                     data-title="Arrox Agency" data-subtitle="(2024)">
-                    <a href="work-details.html"><img src="assets/ad-imgs/project/project-s-19.webp" alt=""></a>
+                    <a href="#portfolio"><img src="assets/ad-imgs/project/project-s-19.webp" alt=""></a>
                     <div class="hover-image">
                       <img class="hover-img" src="assets/ad-imgs/project/project-s-21.webp" alt="Hover Preview">
                       <div class="hover-text">
@@ -437,7 +408,7 @@
                   </div>
                   <div class="portfolio-6-item" data-img="assets/ad-imgs/project/project-s-25.webp"
                     data-title="Arrox Agency" data-subtitle="(2024)">
-                    <a href="work-details.html"><img src="assets/ad-imgs/project/project-s-20.webp" alt=""></a>
+                    <a href="#portfolio"><img src="assets/ad-imgs/project/project-s-20.webp" alt=""></a>
                     <div class="hover-image">
                       <img class="hover-img" src="assets/ad-imgs/project/project-s-21.webp" alt="Hover Preview">
                       <div class="hover-text">
@@ -454,7 +425,7 @@
         <!-- portfolio area end  -->
 
         <!-- approach-area area start  -->
-        <section class="approach-area rr-bg-primary section-spacing-200">
+        <section class="approach-area rr-bg-primary section-spacing-200" id="team">
           <div class="container rr-container-1850">
             <div class="approach-section-header">
               <div class="section-title-wrapper fade-anim">
@@ -499,7 +470,7 @@
         <!-- approach-area area end  -->
 
         <!-- fun fact area start  -->
-        <section class="fun-fact-area section-spacing">
+        <section class="fun-fact-area section-spacing" id="blog">
           <div class="container rr-container-1850">
             <div class="service-6-section-header">
               <div class="section-title-wrapper fade-anim">
@@ -526,7 +497,7 @@
                       digital products since
                       2017</h6>
 
-                    <a href="work.html"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
+                    <a href="#portfolio"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
                   </div>
                 </div>
                 <div class="fun-fact__item">
@@ -545,7 +516,7 @@
                       quality results us a lots of
                       awards</h6>
 
-                    <a href="work.html"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
+                    <a href="#portfolio"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
                   </div>
                 </div>
                 <div class="fun-fact__item">
@@ -564,7 +535,7 @@
                       more than 140+ happy
                       clients</h6>
 
-                    <a href="work.html"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
+                    <a href="#portfolio"><span>( + )</span>Case Study <i class="fa-regular fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -637,7 +608,7 @@
         <div class="call-to-action">
           <div class="container rr-container-1850">
             <div class="call-to-action-inner fade-anim">
-              <a href="contact.html" class="rr-btn cta-btn">
+              <a href="#contact" class="rr-btn cta-btn">
                 <span class="btn-wrap">
                   <span class="text-one">Get in touch</span>
                   <span class="text-two">go</span>
@@ -654,7 +625,7 @@
           <div class="container rr-container-1850">
             <div class="cta-area-6-inner fade-anim">
               <h2 class="cta-area-6-inner-title">
-                <a href="about.html">We are RiverX <br>
+                <a href="#about">We are RiverX <br>
                   Age ( <img src="assets/ad-imgs/blog/blog-details-r-1.webp" alt="image"> ) ncy</a>
               </h2>
             </div>
@@ -666,7 +637,7 @@
       </main>
 
       <!-- footer area start  -->
-      <footer class="footer-area-6">
+      <footer class="footer-area-6" id="contact">
         <div class="container rr-container-1850">
           <div class="footer-area-6-inner">
             <ul class="footer-area-6-list">
